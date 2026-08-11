@@ -1,0 +1,26 @@
+{
+  "counter.sol": {
+    "__sources__": {
+      "counter.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.34;\n\ncontract Counter {\n    uint public count = 0;\n\n    function increment() public {\n        count++;\n    }\n\n    function reset() public {\n        count = 0;\n    }\n\n    function getCount() public view returns (uint) {\n        return count;\n    }\n}",
+        "file": "counter.sol"
+      }
+    }
+  },
+  "EvenOddChecker.sol": {
+    "__sources__": {
+      "EvenOddChecker.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.34;\n\ncontract EvenOddChecker {\n    // Cek ganjil genap\n    function isEven(uint num) public pure returns(bool) {\n        return num % 2 == 0;\n    }\n    // loping\n    function loopSum(uint n) public pure returns(uint) {\n        uint sum = 0; \n        for (uint i = 1; i <= n; i++) {\n            sum += i;\n        }\n        return sum;\n    }\n}",
+        "file": "EvenOddChecker.sol"
+      }
+    }
+  },
+  "intro.sol": {
+    "__sources__": {
+      "intro.sol": {
+        "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.34;\n\ncontract Helloworld {\n    string public message = \"Hello from Smart Contract, updated v2\";\n}",
+        "file": "intro.sol"
+      }
+    }
+  }
+}
